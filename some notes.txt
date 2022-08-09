@@ -1,0 +1,28 @@
+java programming masterclass
+tim buchalka 
+teach java to the level of becoming a java programmer
+jdk 11 
+java development kit - software that is used to create java programs 
+jdk 12 is out 
+jdk 13 is due 
+which version of the jdk should i install ?
+jdk 8 and above 
+
+remaster in progress - 100% free - 1 section at a time - slides are available
+video quality - 1080p
+subtitles - hand edited subtitles english
+question and answer - search facility - be as specifc as you possibly can 
+source code is available
+persistence
+software tools - jdk 11 - used to create and run java programs
+intellij - editor - beginner friendly
+version 11 - LTS 
+install the jdk -openjdk - jdk version 11 
+jdk 11 - LTS version 
+amazon carreto - why ?
+search for amazon carreto 11 - downloads 
+windows 
+64 bit windows or 32? - find out in your computer
+install intellij idea for windows
+run intellij - intellij light or dark
+configuring intellij idea - associate the jdk with intellij 
