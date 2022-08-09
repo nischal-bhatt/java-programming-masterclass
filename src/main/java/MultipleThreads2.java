@@ -1,11 +1,12 @@
-public class MultipleThreads {
+public class MultipleThreads2 {
     public static void main(String[] args) {
 
-        Countdown countdown = new Countdown();
-        CountdownThread t1 = new CountdownThread(countdown);
+        CountdownGeneral countdown1 = new CountdownGeneral();
+        CountdownGeneral countdown2 = new CountdownGeneral();
+        CountdownThreadGeneral t1 = new CountdownThreadGeneral(countdown1);
 
         t1.setName("Thread 1");
-        CountdownThread t2 = new CountdownThread(countdown);
+        CountdownThreadGeneral t2 = new CountdownThreadGeneral(countdown2);
         t2.setName ("Thread 2");
 
         t1.start();
@@ -15,10 +16,10 @@ public class MultipleThreads {
 
 }
 
-class Countdown {
+class CountdownGeneral {
 
     private int i;
-    public /*synchronized*/ void doCountdown() {
+    public void doCountdown() {
         String color;
 
         switch(Thread.currentThread().getName()){
@@ -43,10 +44,10 @@ class Countdown {
 }
 
 
-class CountdownThread extends Thread {
-    private Countdown threadCountdown;
+class CountdownThreadGeneral extends Thread {
+    private CountdownGeneral threadCountdown;
 
-    public CountdownThread (Countdown countdown)
+    public CountdownThreadGeneral (CountdownGeneral countdown)
     {
         threadCountdown = countdown;
     }
