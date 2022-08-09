@@ -13,7 +13,7 @@ public class ProducerConsumerMain2 {
          List<String> buffer  = new ArrayList<String>();
          ReentrantLock bufferLock = new ReentrantLock();
 
-         ExecutorService exec = Executors.newFixedThreadPool(3);
+         ExecutorService exec = Executors.newFixedThreadPool(5);
 
          MyProducer2 producer = new MyProducer2(buffer,ThreadColor.ANSI_GREEN,bufferLock);
          MyConsumer2 consumer = new MyConsumer2(buffer,ThreadColor.ANSI_PURPLE,bufferLock);
