@@ -37,6 +37,16 @@ public class PlayerMain {
 //adelaideCrows.matchResult(baseballTeam,1,1); -- cannot!
         System.out.println("new stuff");
 
+        System.out.println("rankings");
+        System.out.println(adelaideCrows.getTeamName() + " : " + adelaideCrows.ranking());
+        System.out.println(melbourne.getTeamName() + " : " + melbourne.ranking());
+        System.out.println(fremantle.getTeamName() + " : " + fremantle.ranking());
+        System.out.println(hawthorn.getTeamName() + " : " + hawthorn.ranking());
+
+        System.out.println(adelaideCrows.compareTo(melbourne));
+        System.out.println(adelaideCrows.compareTo(hawthorn));
+        System.out.println(hawthorn.compareTo(adelaideCrows));
+        System.out.println(melbourne.compareTo(fremantle));
 
     }
 }
