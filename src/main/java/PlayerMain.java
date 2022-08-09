@@ -35,6 +35,7 @@ public class PlayerMain {
 
         adelaideCrows.matchResult(fremantle,2,1);
 //adelaideCrows.matchResult(baseballTeam,1,1); -- cannot!
+        System.out.println("new stuff");
 
 
     }
