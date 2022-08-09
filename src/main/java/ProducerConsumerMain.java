@@ -52,7 +52,7 @@ class MyProducer implements Runnable {
             }
         }
 
-        System.out.println(color  + "Adding eof and exiting...");
+        System.out.println(color  + "Adding eof and exiting...lolo");
 
         synchronized(buffer) {
             buffer.add("EOF");
