@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class ProducerConsumerMain {
 
@@ -9,9 +10,10 @@ public class ProducerConsumerMain {
     public static void main(String[] args) {
 
          List<String> buffer  = new ArrayList<String>();
-         MyProducer producer = new MyProducer(buffer,ThreadColor.ANSI_GREEN);
-         MyConsumer consumer = new MyConsumer(buffer,ThreadColor.ANSI_PURPLE);
-         MyConsumer consumer2 = new MyConsumer(buffer,ThreadColor.ANSI_RED);
+         ReentrantLock bufferLock = new ReentrantLock();
+         MyProducer producer = new MyProducer(buffer,ThreadColor.ANSI_GREEN,bufferLock);
+         MyConsumer consumer = new MyConsumer(buffer,ThreadColor.ANSI_PURPLE,bufferLock);
+         MyConsumer consumer2 = new MyConsumer(buffer,ThreadColor.ANSI_RED,bufferLock);
 
          new Thread(producer).start();
         new Thread(consumer).start();
@@ -25,10 +27,13 @@ class MyProducer implements Runnable {
     private List<String> buffer;
     private String color;
 
-    public MyProducer(List<String> buffer, String color)
+    private ReentrantLock bufferLock;
+
+    public MyProducer(List<String> buffer, String color, ReentrantLock bufferLock)
     {
         this.buffer = buffer;
         this.color = color;
+        this.bufferLock = bufferLock;
     }
 
     @Override
@@ -41,9 +46,10 @@ class MyProducer implements Runnable {
         {
             try{
                 System.out.println(color + "Adding..." + num);
-                synchronized(buffer) {
+                    bufferLock.lock();
                     buffer.add(num);
-                }
+                    bufferLock.unlock();
+
                 Thread.sleep(random.nextInt(1000));
 
             }catch (InterruptedException e)
@@ -54,9 +60,11 @@ class MyProducer implements Runnable {
 
         System.out.println(color  + "Adding eof and exiting...lolo");
 
-        synchronized(buffer) {
+
+        bufferLock.lock();
             buffer.add("EOF");
-        }
+        bufferLock.unlock();
+
     }
 }
 
@@ -64,33 +72,39 @@ class MyProducer implements Runnable {
 class MyConsumer implements Runnable {
     private List<String> buffer;
     private String color;
+    private ReentrantLock bufferLock;
 
-    public MyConsumer(List<String> buffer, String color) {
+    public MyConsumer(List<String> buffer, String color,ReentrantLock bufferLock) {
         this.buffer = buffer;
         this.color = color;
+        this.bufferLock = bufferLock;
     }
 
     public void run()
     {
         while (true)
         {
-            synchronized(buffer)
-            {
+
+
+            bufferLock.lock();
                 if (buffer.isEmpty())
                 {
+                    bufferLock.unlock();
                     continue;
                 }
 
                 if (buffer.get(0).equals (ProducerConsumerMain.EOF))
                 {
                     System.out.println(color + " Exiting ");
+                    bufferLock.unlock();
                     break;
                 }else
                 {
                     System.out.println(color + "Removed " + buffer.remove(0));
                 }
-            }
 
+
+                bufferLock.unlock();
         }
     }
 }
