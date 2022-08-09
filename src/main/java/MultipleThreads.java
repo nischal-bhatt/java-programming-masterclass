@@ -17,6 +17,7 @@ public class MultipleThreads {
 
 class Countdown {
 
+
     private int i;
     public /*synchronized*/ void doCountdown() {
         String color;
@@ -33,12 +34,17 @@ class Countdown {
 
         }
 
-        for ( i =10; i>0; i--)
-        {
-            //local variables are on thread stack
-            //instance variables are on process heap
-            System.out.println(color + Thread.currentThread().getName() + " : =" + i );
+        synchronized(this) {
+            //  synchronized(color) {
+            // we are using a local variable to synchronize
+            //and local variables are stored on the thread stack
+            for (i = 10; i > 0; i--) {
+                //local variables are on thread stack
+                //instance variables are on process heap
+                System.out.println(color + Thread.currentThread().getName() + " : =" + i);
+            }
         }
+        //}
     }
 }
 
