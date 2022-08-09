@@ -35,6 +35,8 @@ class Countdown {
 
         for ( i =10; i>0; i--)
         {
+            //local variables are on thread stack
+            //instance variables are on process heap
             System.out.println(color + Thread.currentThread().getName() + " : =" + i );
         }
     }
