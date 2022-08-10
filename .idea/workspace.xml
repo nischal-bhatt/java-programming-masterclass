@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc49833-8cee-4e2a-a6bd-ffc5c3db12d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SynchronizationClass2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LockingWithCustomObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SynchronizationClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SynchronizationClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SynchronizationClass2">
+  <component name="RunManager" selected="Application.LockingWithCustomObjects">
     <configuration name="DaemonWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DaemonWorker" />
       <module name="java-programming-masterclass" />
@@ -62,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtendingThreadClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExtendingThreadClass" />
+    <configuration name="LockingWithCustomObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LockingWithCustomObjects" />
       <module name="java-programming-masterclass" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LockingWithCustomObjects" />
         <item itemvalue="Application.SynchronizationClass2" />
         <item itemvalue="Application.SynchronizationClass" />
         <item itemvalue="Application.DaemonWorker" />
         <item itemvalue="Application.SleepClass" />
-        <item itemvalue="Application.ExtendingThreadClass" />
       </list>
     </recent_temporary>
   </component>
