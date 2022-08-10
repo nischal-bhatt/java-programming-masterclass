@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc49833-8cee-4e2a-a6bd-ffc5c3db12d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/VolatileAnother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AtomicVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DeadLockExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DeadLockExampleSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LiveLockExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,23 +56,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VolatileAnother">
-    <configuration name="LocksShit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LocksShit" />
+  <component name="RunManager" selected="Application.AtomicVariables">
+    <configuration name="AtomicVariables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AtomicVariables" />
       <module name="java-programming-masterclass" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerConsumerPatternWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProducerConsumerPatternWaitNotify" />
+    <configuration name="DeadLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DeadLockExample" />
       <module name="java-programming-masterclass" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerConsumerReentrantLocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProducerConsumerReentrantLocks" />
+    <configuration name="DeadLockExampleSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DeadLockExampleSolution" />
+      <module name="java-programming-masterclass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LiveLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LiveLockExample" />
       <module name="java-programming-masterclass" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,20 +92,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileKeyword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VolatileKeyword" />
-      <module name="java-programming-masterclass" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AtomicVariables" />
+        <item itemvalue="Application.LiveLockExample" />
+        <item itemvalue="Application.DeadLockExampleSolution" />
+        <item itemvalue="Application.DeadLockExample" />
         <item itemvalue="Application.VolatileAnother" />
-        <item itemvalue="Application.VolatileKeyword" />
-        <item itemvalue="Application.ProducerConsumerReentrantLocks" />
-        <item itemvalue="Application.LocksShit" />
-        <item itemvalue="Application.ProducerConsumerPatternWaitNotify" />
       </list>
     </recent_temporary>
   </component>
