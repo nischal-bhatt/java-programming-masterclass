@@ -15,6 +15,9 @@ class BankAccountNew {
     }
 
     public void deposit(double amount) {
+
+        boolean status = false;
+
         //  synchronized(this) {
         //     balance += amount;
         // }
@@ -30,6 +33,7 @@ class BankAccountNew {
             if (lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
                 try {
                     balance += amount;
+                    status = true;
                 } finally {
                     lock.unlock();
                 }
@@ -39,9 +43,13 @@ class BankAccountNew {
         } catch (InterruptedException e) {
             // do something here
         }
+        System.out.println("transaction status = " + status);
     }
 
     public void withdraw(double amount) {
+
+        boolean status = false;
+        //this is a local variable. it is already threadsafe!
         //  synchronized(this) {
         //      balance -= amount;
         //  }
@@ -57,6 +65,7 @@ class BankAccountNew {
             if (lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
                 try {
                     balance -= amount;
+                    status = true;
                 } finally {
                     lock.unlock();
                 }
@@ -66,6 +75,8 @@ class BankAccountNew {
         } catch (InterruptedException e) {
 
         }
+
+        System.out.println("transaction status " + status );
     }
 
     public String getAccountNumber() {
