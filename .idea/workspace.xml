@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc49833-8cee-4e2a-a6bd-ffc5c3db12d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WaitAndNotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProducerConsumerPatternWaitNotify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +53,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WaitAndNotify">
-    <configuration name="DaemonWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DaemonWorker" />
+  <component name="RunManager" selected="Application.ProducerConsumerPatternWaitNotify">
+    <configuration name="LockingWithCustomObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LockingWithCustomObjects" />
       <module name="java-programming-masterclass" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockingWithCustomObjects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LockingWithCustomObjects" />
+    <configuration name="ProducerConsumerPatternWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProducerConsumerPatternWaitNotify" />
       <module name="java-programming-masterclass" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerConsumerPatternWaitNotify" />
         <item itemvalue="Application.WaitAndNotify" />
         <item itemvalue="Application.LockingWithCustomObjects" />
         <item itemvalue="Application.SynchronizationClass2" />
         <item itemvalue="Application.SynchronizationClass" />
-        <item itemvalue="Application.DaemonWorker" />
       </list>
     </recent_temporary>
   </component>
