@@ -4,7 +4,7 @@ class Runner1Sleep extends Thread{
         for (int i =0; i<10; i++)
         {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -31,7 +31,7 @@ class Runner2Sleep extends Thread{
 }
 
 public class SleepClass {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Thread t1 = new Runner1Sleep();
         Thread t2 = new Runner2Sleep();
@@ -39,5 +39,11 @@ public class SleepClass {
         t1.start();
         t2.start();
         //this becomes abit more deterministic
+
+        t1.join();
+        // main thread waits for thread 1 to finish execution
+        // before main thread proceeds
+       // t2.join();
+        System.out.println("finished with threads");
     }
 }
