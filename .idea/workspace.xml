@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc49833-8cee-4e2a-a6bd-ffc5c3db12d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DaemonWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SleepClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SleepClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +42,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/New folder/New folder/java-programming-masterclass"
+    "last_opened_file_path": "C:/New folder (2)/java-programming-masterclass"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SleepClass">
+  <component name="RunManager" selected="Application.DaemonWorker">
+    <configuration name="DaemonWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DaemonWorker" />
+      <module name="java-programming-masterclass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExtendingThreadClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExtendingThreadClass" />
       <module name="java-programming-masterclass" />
@@ -57,13 +63,6 @@
     <configuration name="GenericsChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GenericsChallenge" />
       <module name="java-programming-masterclass" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenericsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GenericsExample" />
-      <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,11 +83,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DaemonWorker" />
         <item itemvalue="Application.SleepClass" />
         <item itemvalue="Application.ExtendingThreadClass" />
         <item itemvalue="Application.GenericsChallenge" />
         <item itemvalue="Application.PlayerMain" />
-        <item itemvalue="Application.GenericsExample" />
       </list>
     </recent_temporary>
   </component>
