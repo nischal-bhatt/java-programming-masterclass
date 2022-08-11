@@ -18,5 +18,13 @@ public class MapProgram {
         }else{
             System.out.println("adding..." +language.put("pythin","hi"));
         }
+
+        System.out.println("===========");
+
+        for(String key : language.keySet())
+        {
+            System.out.println(language.get(key));
+        }
+
     }
 }
